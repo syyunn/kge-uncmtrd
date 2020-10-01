@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "ent_emb_uncmtrd",
+      "tensorShape": [
+        237,
+        100
+      ],
+      "tensorPath": "https://gist.githubusercontent.com/syyunn/0ade1feb444f19c0ca1f72bf4dc01966/raw/7f961399bc8e0e32d041371c6656d24e7a036d9f/ent_emb.tsv",
+      "metadataPath": "https://gist.githubusercontent.com/syyunn/0ade1feb444f19c0ca1f72bf4dc01966/raw/7f961399bc8e0e32d041371c6656d24e7a036d9f/ent_emb_meta.tsv"
+    }
+  ]
+}
