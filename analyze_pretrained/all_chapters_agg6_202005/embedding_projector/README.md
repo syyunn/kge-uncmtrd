@@ -27,7 +27,7 @@ Hungary,Exports_401190,Austria,171100
 Uploaded trained embeddings to the Google Embedding Projector so that people can interactiely look into the result. (click the hyperlink in the title)
 
 ## Figures
-### T-SNE Clustering (Perplexity: 5, Steps: 6K)
+### T-SNE Clustering (Perplexity: 5, Learning Rate: 1 Steps: 8K)
 <p align=center><img src="./t-sne_6k_iter.jpg" width="400"></p>
 
 ### Trans-Pacific Group
