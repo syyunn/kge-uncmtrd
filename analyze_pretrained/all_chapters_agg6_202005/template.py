@@ -49,16 +49,16 @@ rel2ix = emb_idx["rel2ix"]
 inv_ent2ix = {v: k for k, v in ent2ix.items()}
 inv_rel2ix = {v: k for k, v in rel2ix.items()}
 
-korea2ix = ent2ix['Rep. of Korea']
-rel2ix = rel2ix['Imports_281111']
+korea2ix = ent2ix['Peru']
+rel2ix = rel2ix['Exports_392062']
 
 korea_emb = model.ent_emb(torch.tensor(korea2ix).long())
 korea_emb_l2norm = korea_emb.norm(p=2, dim=0)
 
-Import_281111_emb = model.rel_emb(torch.tensor(rel2ix).long())
-Import_281111_emb_l2norm = Import_281111_emb.norm(p=2, dim=0)
+Exports_392062_emb = model.rel_emb(torch.tensor(rel2ix).long())
+Exports_392062_emb_l2norm = Exports_392062_emb.norm(p=2, dim=0)
 
-h_plus_r = korea_emb + Import_281111_emb
+h_plus_r = korea_emb + Exports_392062_emb
 h_plus_r_l2norm = h_plus_r.norm(p=2, dim=0)
 
 candidates = model.ent_emb.weight.data
